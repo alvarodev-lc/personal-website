@@ -130,6 +130,7 @@
 
     .nav-link-mobile:hover{
         background-color: #fff;
+        color: #7577fa;
         transition: 250ms;
     }
 
