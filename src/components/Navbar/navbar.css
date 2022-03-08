@@ -37,7 +37,7 @@
 }
 
 .nav-link:hover{
-    background-color: #6d76f7;
+    background-color: #288c93;
     border-radius: 4px;
     transition: all 0.2s ease-out;
 }
@@ -86,7 +86,7 @@
     }
 
     .nav-link:hover{
-        background-color: #7577fa;
+        background-color: #288c93;
         border-radius: 4px;
         padding: 0.2rem;
         width: auto;
@@ -116,13 +116,13 @@
 
     .nav-link-mobile{
         display: block;
-        text-align: center;
+        text-align: left;
         margin-left: 5%;
         padding: 1rem;
         margin-bottom: 1.2rem;
         border-radius: 4px;
         width: 15%;
-        background: #4ad9e4;
+        background: #097179;
         text-decoration: none;
         color: #fff;
         font-size: 1.2rem;
