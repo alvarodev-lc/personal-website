@@ -20,7 +20,7 @@ export const menuItems = [
         cName: 'nav-link',
     },
     {
-        title: 'Sign up',
+        title: 'Contact',
         url: '#',
         cName: 'nav-link-mobile',
     },
