@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { menuItems } from './menuItems'
-import { Button } from '../Button/Button'
+import { Button } from '../Button/button'
 import './navbar.css'
 
 class Navbar extends Component {
@@ -14,7 +14,7 @@ class Navbar extends Component {
         return(
             <nav className="navbar-items">
                 <h1 className="navbar-logo">
-                    React
+                    Alvaro
                     <i className='fab fa-react'></i>
                 </h1>
                 <div className="menu-icon" onClick={this.handleClick}>

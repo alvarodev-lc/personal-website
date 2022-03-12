@@ -1,0 +1,11 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    opacity: 0.6;
+    margin-top: 22%;
+}
+
+/* Force the rest of the application to dissapear when loading*/
+.App{
+    display: none;
+}
