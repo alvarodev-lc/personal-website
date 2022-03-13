@@ -16,7 +16,7 @@ body {
 }
 
 .App{
-    animation: transitionIn 3s;
+    animation: transitionIn 2s;
 }
 
 /* Animation to transition smoothly on page loading*/
@@ -24,11 +24,13 @@ body {
     from{
         opacity: 0;
         transform: rotateX(-10deg);
+        transform: translateY(-15px)
     }
 
     to{
         opacity: 1;
         transform: rotateX(0);
+        transform: translateY(0);
     }
 }
 
