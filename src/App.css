@@ -24,7 +24,7 @@ body {
     from{
         opacity: 0;
         transform: rotateX(-10deg);
-        transform: translateY(-15px)
+        transform: translateY(-25px)
     }
 
     to{
