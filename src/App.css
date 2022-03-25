@@ -11,7 +11,7 @@ body {
     height: 100vh;
     margin: 0;
     background: rgb(2,0,36);
-    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,113,121,1) 47%);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,113,121,1) 70%);
     padding: 0.05px;
 }
 
