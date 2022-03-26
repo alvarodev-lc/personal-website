@@ -4,13 +4,30 @@ import { Button } from '../Button/button'
 import './navbar.min.css'
 
 class Navbar extends Component {
-    state = { clicked: false}
+    // Clicked used to change navbar icon, margin used to change navbar style to avoid overlapping
+    state = { clicked: false, margin: 80}
 
     handleClick = () => {
         this.setState({clicked:!this.state.clicked})
+        let isClicked = this.state.clicked;
+        console.log(isClicked)
+        if (isClicked === true){
+            this.setState({margin: 80})
+        }
+        else{
+            this.setState({margin: 300})
+        }
     }
 
     render(){
+        const css = `
+        @media screen and (max-width: 960px) {
+            .c-navbar-items {
+                margin-bottom: ${this.state.margin}px;
+            }
+        }
+        `
+        console.log(css)
         return(
             <nav className="c-navbar-items">
                 <h1 className="c-navbar-logo">
@@ -30,6 +47,9 @@ class Navbar extends Component {
                             </li>
                         )
                         })}
+                    <style>
+                        {css}
+                    </style>
                 </ul>
                 <Button>Contact</Button>
             </nav>

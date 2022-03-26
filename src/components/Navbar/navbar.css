@@ -1,3 +1,7 @@
+nav {
+    display: flex;
+}
+
 .c-navbar-items{
     height: 80px;
     background-color: transparent !important;
@@ -5,6 +9,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    margin-bottom: 5%;
 }
 
 .c-navbar-logo{
@@ -56,9 +61,6 @@
 }
 
 @media screen and (max-width: 960px) {
-    .c-navbar-items{
-        position: relative;
-    }
 
     .c-nav-menu{
         display: flex;
