@@ -1,36 +1,62 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Fredoka', sans-serif;
 }
 
+
 /* Padding 0.05px to avoid margin collapsing, casuing scroll efect when it should not*/
+
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,113,121,1) 70%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(9, 113, 121, 1) 70%);
     padding: 0.05px;
 }
 
-.App{
+.App {
     animation: transitionIn 2s;
 }
 
+
 /* Animation to transition smoothly on page loading*/
-@keyframes transitionIn{
-    from{
+
+@keyframes transitionIn {
+    from {
         opacity: 0;
         transform: rotateX(-10deg);
         transform: translateY(-25px)
     }
-
-    to{
+    to {
         opacity: 1;
         transform: rotateX(0);
         transform: translateY(0);
     }
 }
 
+
+/* Override bootstrap card component fields*/
+
+.card {
+    background-color: #040327 !important;
+    color: white;
+    /* Avoid card container to shrink too much making progressbars overflow*/
+    min-width: 350px !important;
+}
+
+.card-header {
+    margin-top: -1px;
+    margin-left: -13px;
+    margin-right: -13px;
+    font-size: 20px;
+    background-color: #141241 !important;
+    border-radius: 9px;
+}
+
+.card-title {
+    font-size: 15px;
+    margin-left: 5px;
+}

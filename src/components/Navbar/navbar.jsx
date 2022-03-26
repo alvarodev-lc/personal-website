@@ -10,7 +10,6 @@ class Navbar extends Component {
     handleClick = () => {
         this.setState({clicked:!this.state.clicked})
         let isClicked = this.state.clicked;
-        console.log(isClicked)
         if (isClicked === true){
             this.setState({margin: 80})
         }
@@ -24,10 +23,10 @@ class Navbar extends Component {
         @media screen and (max-width: 960px) {
             .c-navbar-items {
                 margin-bottom: ${this.state.margin}px;
+                transition: all 0.5s ease-in-out;
             }
         }
         `
-        console.log(css)
         return(
             <nav className="c-navbar-items">
                 <h1 className="c-navbar-logo">
