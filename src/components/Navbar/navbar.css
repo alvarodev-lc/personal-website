@@ -87,8 +87,9 @@
     }
 
     .c-nav-link:hover{
-        background-color: #288c93;
         border-radius: 4px;
+        background-color: #288c93 !important;
+        color: rgba(2,0,36,1) !important;
         padding: 0.2rem;
         width: auto;
     }
