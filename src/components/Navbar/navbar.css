@@ -1,4 +1,4 @@
-.navbar-items{
+.c-navbar-items{
     height: 80px;
     background-color: transparent !important;
     display: flex;
@@ -7,7 +7,7 @@
     font-size: 1.2rem;
 }
 
-.navbar-logo{
+.c-navbar-logo{
     color: #fff;
     justify-self: start;
     margin-left: 5%;
@@ -19,7 +19,7 @@
     font-size: 1.6rem;
 }
 
-.nav-menu{
+.c-nav-menu{
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
@@ -30,23 +30,24 @@
     margin-right: 2rem;
 }
 
-.nav-link{
+.c-nav-link{
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 0.5rem 1rem;
 }
 
-.nav-link:hover{
+.c-nav-link:hover{
     background-color: #288c93;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    color: rgba(2,0,36,1);
 }
 
-.nav-link-mobile{
+.c-nav-link-mobile{
     display: none;
 }
 
-.menu-icon{
+.c-menu-icon{
     display: none;
 }
 
@@ -55,11 +56,11 @@
 }
 
 @media screen and (max-width: 960px) {
-    .navbar-items{
+    .c-navbar-items{
         position: relative;
     }
 
-    .nav-menu{
+    .c-nav-menu{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -71,35 +72,35 @@
         transition: all 0.5s ease;
     }
 
-    .nav-menu.active{
+    .c-nav-menu.active{
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
     }
 
-    .nav-link{
+    .c-nav-link{
         text-align: left;
         margin-left: 5%;
         padding: 0.2rem;
         display: table;
     }
 
-    .nav-link:hover{
+    .c-nav-link:hover{
         background-color: #288c93;
         border-radius: 4px;
         padding: 0.2rem;
         width: auto;
     }
 
-    .navbar-logo{
+    .c-navbar-logo{
         position: absolute;
         top: 0;
         left: 0;
         transform: translate(25%, 50%);
     }
 
-    .menu-icon{
+    .c-menu-icon{
         display: block;
         position: absolute;
         top: 0;
@@ -114,7 +115,7 @@
         font-size: 2rem;
     }
 
-    .nav-link-mobile{
+    .c-nav-link-mobile{
         display: block;
         text-align: left;
         margin-left: 5%;
@@ -128,7 +129,7 @@
         font-size: 1.2rem;
     }
 
-    .nav-link-mobile:hover{
+    .c-nav-link-mobile:hover{
         background-color: #fff;
         color: #288c93;
         transition: 250ms;

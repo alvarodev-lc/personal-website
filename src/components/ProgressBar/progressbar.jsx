@@ -1,4 +1,4 @@
-import "./progressbar.css"
+import "./progressbar.min.css"
 
 function ProgressBar(props) {
     // To set the progressbar text dynamically
