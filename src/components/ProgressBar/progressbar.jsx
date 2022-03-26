@@ -12,7 +12,6 @@ function ProgressBar(props) {
         background-color: pink;
     }
     `
-    console.log(css)
     return(
         <div className="progressbar">
             <div className={fill_classname}>
