@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <ProgressBar progress="25"/>
+      <ProgressBar progress="70"/>
     </div>
   );
 }
