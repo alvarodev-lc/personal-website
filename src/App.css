@@ -60,3 +60,30 @@ body {
     font-size: 15px;
     margin-left: 5px;
 }
+
+@media screen and (max-width: 700px) {
+    .technology-card {
+        margin-top: 30px !important;
+    }
+}
+
+
+/* End of card overwrites*/
+
+.big-text {
+    font-size: 40px;
+    color: white;
+}
+
+.normal-text {
+    font-size: 20px;
+    color: white;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
