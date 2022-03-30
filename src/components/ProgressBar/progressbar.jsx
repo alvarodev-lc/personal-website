@@ -1,6 +1,5 @@
 import "./progressbar.min.css"
 
-// TODO Make progressbar fill appear smoothly, from left to right
 
 function ProgressBar(props) {
     // To set the progressbar text dynamically
