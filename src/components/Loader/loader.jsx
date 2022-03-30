@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoaderTemplate from './template';
+import {Navigate} from 'react-router-dom'
  
 export default function Loader() {
     const [loading, setLoading] = useState(true);
@@ -22,12 +23,10 @@ export default function Loader() {
         </div>
         )
     }
-    
-    /* CSS to force application to show again once the page has already loaded*/
-    const css = `
-    .App {
-        display: block !important;
-    }
-    `
-    return <style>{css}</style>
+
+    return(
+    <>
+        <Navigate to='/home'/>
+    </>
+    )
 }
