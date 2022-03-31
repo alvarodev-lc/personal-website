@@ -25,7 +25,7 @@ function App() {
       <Navbar/>
       <div className="App">
         {/*Presentation*/}
-        <div className='container-fluid'>
+        <div className='container-fluid' id='presentation-card'>
           <div className='row'>
             <div className='col offset-md-2'>
               <span className='big-text'>
@@ -36,16 +36,19 @@ function App() {
           <div className='row'>
             <div className='col offset-md-2 pt-md-3 pb-100'>
               <span className='normal-text'>
-                I solve problems using my skills and a data driven mentallity.
+                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, and<br/>
+                see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset<br/>
+                and a lot of strategic thinking!
               </span>
             </div>
           </div>
         </div>
+        {/*Maybe talk about strategic thinking a little bit*/}
         {/*Skills cards*/}
         <div className='container-fluid'>
           <div className='row justify-content-around'>
             {/*Technical skills*/}
-            <div className="col col-lg-4 card min-width-300">
+            <div className="col col-lg-4 card min-width-300" id='programming-languages-card'>
               <div className="card-header">
                 Programming languages
               </div>
@@ -94,7 +97,7 @@ function App() {
               </div>
             </div>
             {/*Technology knowledge*/}
-            <div className="col col-lg-4 card min-width-300 technology-card">
+            <div className="col col-lg-4 card min-width-300" id='technology-card'>
               <div className="card-header">
                 Technology knowledge
               </div>
