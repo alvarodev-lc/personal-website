@@ -17,6 +17,11 @@ body {
     padding: 0.05px;
 }
 
+/* To make the background color take full page height*/
+html {
+    background: inherit;
+}
+
 
 #presentation-card {
     animation: transitionBottomUp 2s;
