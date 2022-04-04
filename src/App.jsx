@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <div className="App" media = "None">
+      <div className="App">
         {/*Presentation*/}
         <div className='container-fluid' id='presentation-card'>
           <div className='row'>
