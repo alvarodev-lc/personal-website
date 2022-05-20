@@ -2,6 +2,9 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import '../.././static/css/bootstrap/bootstrap.min.css'
 
+import mail_icon from '../.././static/images/mail.svg'
+import linkedin_icon from '../.././static/images/linkedin.png'
+
 
 function ModalImplementation(props) {
   return (
@@ -17,9 +20,26 @@ function ModalImplementation(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>
-          Email, Linkedin...
-        </p>
+        <div className="row pb-3 offset-md-2">
+          <div className="col-5">
+            Name: Álvaro
+          </div>
+          <div className="col-7">
+            Last name: López Cruz
+          </div>
+        </div>
+        <div className="row pb-3 offset-md-2">
+          <div className="col-12">
+            <img src={mail_icon} alt="Mail Icon" width="25" height="25" className="pe-2"/>
+            <span>alvaro.lopez19997@gmail.com</span>
+          </div>
+        </div>
+        <div className="row offset-md-2">
+          <div className="col-12">
+            <img src={linkedin_icon} alt="LinkedIn Icon" width="30" height="20" className="pe-2"/>
+            <span>Username</span>
+          </div>
+        </div>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
