@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { menuItems } from './menuItems'
-import { Link } from 'react-router-dom';
-import { Button } from '../Button/button'
+import { Link } from 'react-router-dom'
+import ContactModal from '../ContactModal/contact_modal';
 
 import './navbar.min.css'
 
@@ -9,9 +9,20 @@ import './navbar.min.css'
 class Navbar extends Component {
     // Clicked used to change navbar icon, margin used to change navbar style to avoid overlapping
     state = { clicked: false, margin: 80}
+    modal_state = {clicked: false}
 
     handleClick = () => {
         this.setState({clicked:!this.state.clicked})
+        let isClicked = this.state.clicked;
+        if (isClicked === true){
+            this.setState({margin: 80})
+        }
+        else{
+            this.setState({margin: 300})
+        }
+    }
+    handleModal = () => {
+        this.setState({clicked:!this.modal_state.clicked})
         let isClicked = this.state.clicked;
         if (isClicked === true){
             this.setState({margin: 80})
@@ -53,7 +64,7 @@ class Navbar extends Component {
                             {css}
                         </style>
                     </ul>
-                    <Button>Contact</Button>
+                    <ContactModal/>
                 </nav>
         )
     }
