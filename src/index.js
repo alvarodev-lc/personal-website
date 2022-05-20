@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import About from './pages/about_me';
+import Projects from './pages/projects';
 import Loading from './pages/loading';
 import {
     BrowserRouter,
@@ -12,9 +13,11 @@ import {
 ReactDOM.render( 
     <BrowserRouter>
         <Routes Routes>
-            <Route exact path = '/' element = { <Loading/> }/> 
+            <Route exact path = '/' element = { <Loading/> }/>
+            <Route path = '/home' element = {<App/> }/> 
             <Route path = '/about' element = { <About/> }/>
-            <Route path = '/home' element = {<App/> }/>
+            <Route path = '/projects' element = {<Projects/> }/>
+
         </Routes >  
     </BrowserRouter > ,
     document.getElementById('App')
