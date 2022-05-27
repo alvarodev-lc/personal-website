@@ -19,7 +19,7 @@ function ModalImplementation(props) {
       </Modal.Header>
       <Modal.Body>
         <div className="row pb-3">
-            <iframe title="CV" src="https://drive.google.com/file/d/1BB3uKem7OzP1KHZqLTCOm8gh8OQkpVps/preview" width="640" height="600" allow="autoplay"></iframe>
+            <iframe title="CV" src="https://drive.google.com/file/d/1BB3uKem7OzP1KHZqLTCOm8gh8OQkpVps/preview" width="640" height="600" allow="autoplay"/>
         </div>
       </Modal.Body>
       <Modal.Footer>
