@@ -50,7 +50,7 @@ function App() {
             {/*Technical skills*/}
             <div className="col col-lg-4 card min-width-300" id='programming-languages-card'>
               <div className="card-header">
-                Programming languages
+                Languages
               </div>
               <div className="card-body">
                 {/*Python*/}
