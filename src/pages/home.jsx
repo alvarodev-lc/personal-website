@@ -46,7 +46,7 @@ const Home = () => {
       <Navbar />
       <div>
         {/*Presentation*/}
-        <div className='container-fluid' id='presentation-card'>
+        <div className='container-fluid' data-aos="fade-down" data-aos-duration="1500">
           <div className='row'>
             <div className='col offset-md-2'>
               <span className='big-text'>
@@ -69,7 +69,7 @@ const Home = () => {
         <div className='container-fluid pb-5'>
           <div className='row justify-content-around'>
             {/*Technical skills*/}
-            <div className="col col-lg-4 card min-width-300" id='programming-languages-card'>
+            <div className="col col-lg-4 card min-width-300" data-aos="fade-right" data-aos-duration="1500">
               <div className="card-header">
                 Languages
               </div>
@@ -118,7 +118,7 @@ const Home = () => {
               </div>
             </div>
             {/*Technology knowledge*/}
-            <div className="col col-lg-4 card min-width-300" id='technology-card'>
+            <div className="col col-lg-4 card min-width-300" data-aos="fade-left" data-aos-duration="1500">
               <div className="card-header">
                 Technology knowledge
               </div>
