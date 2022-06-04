@@ -1,29 +1,50 @@
-import Navbar from './components/Navbar/navbar'
-import ProgressBar from './components/ProgressBar/progressbar';
+import { useEffect } from 'react';
+import Aos from 'aos';
 
-import './App.min.css';
-import './static/css/fontawesome/fontawesome.min.css'
-import './static/css/bootstrap/bootstrap.min.css'
+import Navbar from '../components/Navbar/navbar'
+import ProgressBar from '../components/ProgressBar/progressbar';
 
-import pyicon from './static/images/python.png'
-import jsicon from './static/images/js.png'
-import javaicon from './static/images/java.png'
-import htmlicon from './static/images/html.png'
-import cssicon from './static/images/css.png'
-import othersicon from './static/images/others.png'
-import dockericon from './static/images/docker.png'
-import giticon from './static/images/git.png'
-import sqlicon from './static/images/sql.png'
-import djangoicon from './static/images/django.png'
-import linuxicon from './static/images/linux.png'
-import reacticon from './static/images/react.png'
+import '.././App.min.css';
+import '.././static/css/fontawesome/fontawesome.min.css'
+import '.././static/css/bootstrap/bootstrap.min.css'
+import 'aos/dist/aos.css'
+
+import neverland_poster from '.././static/images/thumbnails/neverland_poster.png'
+
+import pyicon from '.././static/images/icons/python.png'
+import jsicon from '.././static/images/icons/js.png'
+import javaicon from '.././static/images/icons/java.png'
+import htmlicon from '.././static/images/icons/html.png'
+import cssicon from '.././static/images/icons/css.png'
+import othersicon from '.././static/images/icons/others.png'
+import dockericon from '.././static/images/icons/docker.png'
+import giticon from '.././static/images/icons/git.png'
+import sqlicon from '.././static/images/icons/sql.png'
+import djangoicon from '.././static/images/icons/django.png'
+import linuxicon from '.././static/images/icons/linux.png'
+import reacticon from '.././static/images/icons/react.png'
 
 
-function App() {
+const resetVideo = function () {
+  // Reload the video instad of setting it to second zero to get back to placeholder image
+  let myVideo = document.getElementById("neverland_video");
+  myVideo.load();
+};
+
+const initVideo = function () {
+  // Set volume to 20% of the total to avoid loud noises.
+  let myVideo = document.getElementById("neverland_video");
+  myVideo.volume = 0.2;
+};
+
+const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
-      <Navbar/>
-      <div className="App">
+      <Navbar />
+      <div>
         {/*Presentation*/}
         <div className='container-fluid' id='presentation-card'>
           <div className='row'>
@@ -36,8 +57,8 @@ function App() {
           <div className='row'>
             <div className='col offset-md-2 pt-md-3 pb-100'>
               <span className='normal-text'>
-                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, and<br/>
-                see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset<br/>
+                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, and<br />
+                see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset<br />
                 and a lot of strategic thinking!
               </span>
             </div>
@@ -45,7 +66,7 @@ function App() {
         </div>
         {/*Maybe talk about strategic thinking a little bit*/}
         {/*Skills cards*/}
-        <div className='container-fluid'>
+        <div className='container-fluid pb-5'>
           <div className='row justify-content-around'>
             {/*Technical skills*/}
             <div className="col col-lg-4 card min-width-300" id='programming-languages-card'>
@@ -149,8 +170,45 @@ function App() {
           </div>
         </div>
       </div>
+      <div id='hobbies'>
+        {/*Hobbies*/}
+        <div className='container-fluid pt-5' id='presentation-card'>
+          <div className='row justify-content-around'>
+            <div className='col-5 pt-5' data-aos="fade-right" data-aos-duration="1500">
+              <div className='row'>
+                <div className='col offset-md-2'>
+                  <span className='big-text'>
+                    Hobbies
+                  </span>
+                </div>
+              </div>
+              <div className='row'>
+                <div className='col offset-md-2'>
+                  <span className='normal-text'>
+                    I spend a lot of my free time investigating and discovering new techologies and trying them on on my own. It is both fun and educative to
+                    learn and apply this knowledge on fields I love such as gaming.<br /><br />
+
+                    Neverland is a small project i started on summer in 2019. Its a rogue like game where you defeat waves of enemies. I wanted to learn how to
+                    manage infinite object spawning, enemy interactions and projectile physics.<br /><br />
+
+                    Moreover, I designed every image and sprite from scratch, which was a hard process but really let me develop my creativity.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className='col-6 pb-100' data-aos="fade-left" data-aos-duration="1500">
+              <div className='row'>
+                <video id="neverland_video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
+                  {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
+                  <source src="https://dl.dropboxusercontent.com/s/l62r4uknz3g5umi/Neverland_demo.mp4?raw=1" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Home;

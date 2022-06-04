@@ -5,12 +5,12 @@ import '../.././static/css/bootstrap/bootstrap.min.css'
 import '../.././App.min.css'
 import './contact_modal.min.css'
 
-import mail_icon from '../.././static/images/mail.svg'
-import linkedin_icon from '../.././static/images/linkedin.png'
-import user_icon from '../.././static/images/user_icon.png'
-import github_icon from '../.././static/images/github_icon.png'
-import clipboard_icon from '../.././static/images/clipboard_icon.png'
-import mobile_icon from '../.././static/images/mobile_icon.png'
+import mail_icon from '../.././static/images/icons/mail.svg'
+import linkedin_icon from '../.././static/images/icons/linkedin.png'
+import user_icon from '../.././static/images/icons/user_icon.png'
+import github_icon from '../.././static/images/icons/github_icon.png'
+import clipboard_icon from '../.././static/images/icons/clipboard_icon.png'
+import mobile_icon from '../.././static/images/icons/mobile_icon.png'
 
 const email = "alvaro.lopez19997@gmail.com"
 

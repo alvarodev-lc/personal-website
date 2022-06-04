@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Home from './pages/home';
 import About from './pages/about_me';
 import Projects from './pages/projects';
 import Loading from './pages/loading';
@@ -14,7 +14,7 @@ ReactDOM.render(
     <BrowserRouter>
         <Routes Routes>
             <Route exact path = '/' element = { <Loading/> }/>
-            <Route path = '/home' element = {<App/> }/> 
+            <Route path = '/home' element = {<Home/> }/> 
             <Route path = '/about' element = { <About/> }/>
             <Route path = '/projects' element = {<Projects/> }/>
 

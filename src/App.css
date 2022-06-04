@@ -22,6 +22,10 @@ body {
     animation: transitionBottomUp 2s;
 }
 
+#hobbies {
+    overflow-x: hidden;
+}
+
 #programming-languages-card {
     animation: transitionLeftRight 2s;
 }
@@ -122,12 +126,20 @@ body {
     display: inline !important;
 }
 
+.block {
+    display: block;
+}
+
 .justify-content-center {
     justify-content: center !important;
 }
 
 .w-auto {
     width: auto;
+}
+
+.w-85 {
+    width: 85%;
 }
 
 .pb-100 {
@@ -156,7 +168,6 @@ body {
 .smallbutton:focus {
     background-color: #3c8aff;
 }
-
 
 
   
