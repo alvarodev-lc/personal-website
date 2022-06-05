@@ -118,7 +118,7 @@ const Home = () => {
               </div>
             </div>
             {/*Technology knowledge*/}
-            <div className="col col-lg-4 card min-width-300" data-aos="fade-left" data-aos-duration="1500">
+            <div className="col col-lg-4 card min-width-300" data-aos="fade-left" data-aos-duration="1500" id="technology-card">
               <div className="card-header">
                 Technology knowledge
               </div>
@@ -170,39 +170,33 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id='hobbies'>
+      <div id='hobbies' className='container-fluid pt-5'>
         {/*Hobbies*/}
-        <div className='container-fluid pt-5' id='presentation-card'>
-          <div className='row justify-content-around'>
-            <div className='col-5 pt-5' data-aos="fade-right" data-aos-duration="1500">
-              <div className='row'>
-                <div className='col offset-md-2'>
-                  <span className='big-text'>
-                    Hobbies
-                  </span>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col offset-md-2'>
-                  <span className='normal-text'>
-                    I spend a lot of my free time investigating and discovering new techologies and trying them on on my own. It is both fun and educative to
-                    learn and apply this knowledge on fields I love such as gaming.<br /><br />
-
-                    Neverland is a small project i started on summer in 2019. Its a rogue like game where you defeat waves of enemies. I wanted to learn how to
-                    manage infinite object spawning, enemy interactions and projectile physics.<br /><br />
-
-                    Moreover, I designed every image and sprite from scratch, which was a hard process but really let me develop my creativity.
-                  </span>
-                </div>
-              </div>
+        <div className='row justify-content-around'>
+          <div className='col pt-5 min-w-350' data-aos="fade-right" data-aos-duration="1500">
+            <div className='row offset-md-2'>
+              <span className='big-text'>
+                Hobbies
+              </span>
             </div>
-            <div className='col-6 pb-100' data-aos="fade-left" data-aos-duration="1500">
-              <div className='row'>
-                <video id="neverland_video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
-                  {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
-                  <source src="https://dl.dropboxusercontent.com/s/l62r4uknz3g5umi/Neverland_demo.mp4?raw=1" />
-                </video>
-              </div>
+            <div className='row offset-md-2'>
+              <span className='normal-text'>
+                I spend a lot of my free time investigating and discovering new techologies and trying them on on my own. It is both fun and educative to
+                learn and apply this knowledge on fields I love such as gaming.<br /><br />
+
+                Neverland is a small project i started on summer in 2019. Its a rogue like game where you defeat waves of enemies. I wanted to learn how to
+                manage infinite object spawning, enemy interactions and projectile physics.<br /><br />
+
+                Moreover, I designed every image and sprite from scratch, which was a hard process but really let me develop my creativity.
+              </span>
+            </div>
+          </div>
+          <div className='col pb-100 min-w-350' data-aos="fade-left" data-aos-duration="1500">
+            <div className='row'>
+              <video id="neverland_video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
+                {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
+                <source src="https://dl.dropboxusercontent.com/s/l62r4uknz3g5umi/Neverland_demo.mp4?raw=1" />
+              </video>
             </div>
           </div>
         </div>

@@ -92,6 +92,10 @@ body {
     width: 85%;
 }
 
+.min-w-350 {
+    min-width: 350px;
+}
+
 .pb-100 {
     padding-bottom: 100px;
 }

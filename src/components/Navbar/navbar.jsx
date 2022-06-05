@@ -39,6 +39,15 @@ class Navbar extends Component {
                 margin-bottom: ${this.state.margin}px;
                 transition: all 0.5s ease-in-out;
             }
+
+            .c-nav-menu {
+                height:200px;
+            }
+
+            #contact_modal {
+                padding-bottom: 0;
+                padding-top: 25px;
+            }
         }
         `
         return(
