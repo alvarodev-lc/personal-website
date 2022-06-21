@@ -3,6 +3,7 @@ import Aos from 'aos';
 
 import Navbar from '../components/Navbar/navbar'
 import ProgressBar from '../components/ProgressBar/progressbar';
+import Footer from '../components/Footer/footer';
 
 import '.././App.min.css';
 import '.././static/css/fontawesome/fontawesome.min.css'
@@ -179,7 +180,7 @@ const Home = () => {
                 Hobbies
               </span>
             </div>
-            <div className='row offset-md-2'>
+            <div className='row offset-md-2 pt-5'>
               <span className='normal-text'>
                 I spend a lot of my free time investigating and discovering new techologies and trying them on on my own. It is both fun and educative to
                 learn and apply this knowledge on fields I love such as gaming.<br /><br />
@@ -195,12 +196,13 @@ const Home = () => {
             <div className='row'>
               <video id="neverland_video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
                 {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
-                <source src="https://dl.dropboxusercontent.com/s/l62r4uknz3g5umi/Neverland_demo.mp4?raw=1" />
+                <source src="https://dl.dropboxusercontent.com/s/vck1o60ipg02n7a/Neverland_video.mp4?raw=1" />
               </video>
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

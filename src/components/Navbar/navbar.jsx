@@ -46,7 +46,10 @@ class Navbar extends Component {
 
             #contact_modal {
                 padding-bottom: 0;
-                padding-top: 25px;
+                padding-top: 29.5px;
+            }
+            .c-navbar-logo {
+                padding-top: 4px;
             }
         }
         `
