@@ -1,3 +1,13 @@
+.footer-text {
+  text-decoration: none;
+  color:   #ababab ;
+}
+
+.footer-text:hover {
+  text-decoration: none;
+  color:   #696969 ;
+}
+
 .footer {
     position: relative;
     width: 100%;
@@ -16,64 +26,129 @@
     transform-origin: 100% 100%;
   }
 
-  .mask-base {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    background-color: #dfe1e4;
-    background-image: none;
-    background-position: 0 0;
-    background-size: auto;
-    -webkit-transform: skew(0deg,-6deg);
-    -ms-transform: skew(0deg,-6deg);
-    transform: skew(0deg,-6deg);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-  }
+.mask-base {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #dfe1e4;
+  background-image: none;
+  background-position: 0 0;
+  background-size: auto;
+  -webkit-transform: skew(0deg,-6deg);
+  -ms-transform: skew(0deg,-6deg);
+  transform: skew(0deg,-6deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
 
-  .mask-top.tl {
-    margin-top: 6px;
-    background-color: #040327;
-    -webkit-perspective-origin: 50% 50%;
-    perspective-origin: 50% 50%;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-  }
+.mask-top.tl {
+  margin-top: 6px;
+  background-color: #040327;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
 
-  .mask-top {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    background-color: #dfe1e4;
-    background-image: none;
-    background-position: 0 0;
-    background-size: auto;
-    -webkit-transform: skew(0deg,-6deg);
-    -ms-transform: skew(0deg,-6deg);
-    transform: skew(0deg,-6deg);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-  }
+.mask-top {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #dfe1e4;
+  background-image: none;
+  background-position: 0 0;
+  background-size: auto;
+  -webkit-transform: skew(0deg,-6deg);
+  -ms-transform: skew(0deg,-6deg);
+  transform: skew(0deg,-6deg);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
 
-  .section {
-    margin-bottom: 3rem;
-  }
+.section {
+  margin-bottom: 3rem;
+}
 
-  .container {
-    position: relative;
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+.container {
+  position: relative;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 
-  .footer-content {
-    margin-top: 17rem;
-  }
+.footer-content {
+  margin-top: 17rem;
+}
+
+.footer_secondary-grid {
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.footer_secondary {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.divider.dm {
+  display: block;
+  background-color: rgba(68,68,76,.35);
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  margin-top: 8px;
+  background-color: rgba(4,3,39,.35);
+}
+
+.left_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.copyright {
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: 0;
+}
+
+.p12 {
+  position: relative;
+  color: #4f4f4f;
+}

@@ -43,7 +43,7 @@ const Home = () => {
     Aos.init();
   }, []);
   return (
-    <div>
+    <div id="home">
       <Navbar />
       <div>
         {/*Presentation*/}

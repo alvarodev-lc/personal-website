@@ -1,3 +1,7 @@
+:root {
+    --main-special: #629cf3;
+    --secondary-special: #0d6efd;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,18 +9,35 @@
     font-family: 'Fredoka', sans-serif;
 }
 
-
 /* Padding 0.05px to avoid margin collapsing, causing scroll efect when it should not*/
 
 body {
     width: 100%;
-    height: 100vh;
+    height:100vh;
     margin: 0;
     background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(9, 113, 121, 1) 70%);
     background-attachment: fixed;
     padding: 0.05px;
+    display: flex;
+    flex-direction: column;
 }
 
+p, strong, h1, h2, h3, li {
+    color: white;
+}
+
+a {
+    color: var(--main-special);
+}
+
+a.med-text:hover {
+    color: var(--main-special);
+}
+
+
+a:hover {
+    color: var(--secondary-special);
+}
 
 #presentation-card {
     animation: transitionBottomUp 2s;
@@ -55,11 +76,15 @@ body {
     }
 }
 
-
 /* End of card overwrites*/
 
 .big-text {
     font-size: 40px;
+    color: white;
+}
+
+.med-text {
+    font-size: 35px;
     color: white;
 }
 
@@ -84,6 +109,10 @@ body {
     justify-content: center !important;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .w-auto {
     width: auto;
 }
@@ -100,6 +129,14 @@ body {
     padding-bottom: 100px;
 }
 
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.height-auto {
+    height: auto;
+}
+
 .link {
     text-decoration: none !important;
 }
@@ -107,12 +144,12 @@ body {
 .smallbutton {
     padding: 1px 3px 2px 3px !important;
     border-radius: 4px;
-    border-color: #629cf3;
-    background-color: #629cf3;
+    border-color: var(--main-special);
+    background-color: var(--main-special);
 }
 
 .smallbutton:hover {
-    background-color: #3c8aff;
+    background-color: var(--secondary-special)
 }
 
 .smallbutton:active {
@@ -120,8 +157,14 @@ body {
   }
 
 .smallbutton:focus {
-    background-color: #3c8aff;
+    background-color: var(--secondary-special);
 }
 
-
-  
+.container {
+    position: relative;
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}

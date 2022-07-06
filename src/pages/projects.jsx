@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/navbar'
 
 function Projects() {
   return (
-    <div className="projects">
+    <div id="projects">
       <Navbar/>
     </div>
   );
