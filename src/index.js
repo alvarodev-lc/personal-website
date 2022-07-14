@@ -7,6 +7,12 @@ import Projects from './pages/projects';
 import Loading from './pages/loading';
 import PrivacyPolicy from './pages/privacy_policy';
 
+import './App.min.css';
+import './static/css/fontawesome/fontawesome.min.css'
+import './static/css/bootstrap/bootstrap.min.css'
+
+import 'aos/dist/aos.css'
+
 import {
     BrowserRouter,
     Routes,

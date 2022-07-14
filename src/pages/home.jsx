@@ -5,11 +5,6 @@ import Navbar from '../components/Navbar/navbar'
 import ProgressBar from '../components/ProgressBar/progressbar';
 import Footer from '../components/Footer/footer';
 
-import '.././App.min.css';
-import '.././static/css/fontawesome/fontawesome.min.css'
-import '.././static/css/bootstrap/bootstrap.min.css'
-import 'aos/dist/aos.css'
-
 import neverland_poster from '.././static/images/thumbnails/neverland_poster.png'
 
 import pyicon from '.././static/images/icons/python.png'
@@ -56,10 +51,10 @@ const Home = () => {
             </div>
           </div>
           <div className='row'>
-            <div className='col offset-md-2 pt-md-3 pb-100'>
+            <div className='col offset-md-2 pt-md-3 pb-100 max-w-70perc'>
               <span className='normal-text'>
-                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, and<br />
-                see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset<br />
+                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, And
+                see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset
                 and a lot of strategic thinking!
               </span>
             </div>

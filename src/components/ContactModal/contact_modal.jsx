@@ -7,10 +7,10 @@ import './contact_modal.min.css'
 
 import mail_icon from '../.././static/images/icons/mail.svg'
 import linkedin_icon from '../.././static/images/icons/linkedin.png'
-import user_icon from '../.././static/images/icons/user_icon.png'
-import github_icon from '../.././static/images/icons/github_icon.png'
-import clipboard_icon from '../.././static/images/icons/clipboard_icon.png'
-import mobile_icon from '../.././static/images/icons/mobile_icon.png'
+import user_icon from '../.././static/images/icons/user.png'
+import github_icon from '../.././static/images/icons/github.png'
+import clipboard_icon from '../.././static/images/icons/clipboard.png'
+import mobile_icon from '../.././static/images/icons/mobile.png'
 
 const email = "alvaro.lopez19997@gmail.com"
 
