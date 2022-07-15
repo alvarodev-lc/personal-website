@@ -49,7 +49,7 @@ const Footer = () => {
                         <div className='footer-column'>
                             <div className='footer-content-item'>
                                 <a className='footer-text display-inline ps-5' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">
-                                    Linkedin
+                                    LinkedIn
                                 </a>
                             </div>
                             <div className='footer-content-item'>
