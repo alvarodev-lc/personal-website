@@ -36,7 +36,7 @@ const Projects = () => {
               <div data-aos="fade-down" data-aos-duration="1500">
                 <span className='normal-text'>
                   PAS Pokedex was a project I made with a group of developers using Android Studio and Java. The point was to consume a <a href='https://pokeapi.co/'
-                  target={'#blank'}>pokemon API</a> to consume all the information we could and create a Pokédex with usefull information for Pokémon lovers. We 
+                  target={'#blank'}>Pokémon API</a> to consume all the information we could and create a Pokédex with usefull information for Pokémon lovers. We 
                   implemented a login system using <a href='https://firebase.google.com/' target={'#blank'}>Firebase</a> so that we could store users on the cloud.
                 </span>
               </div>
