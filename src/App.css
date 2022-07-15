@@ -35,7 +35,7 @@ a {
     color: var(--main-special);
 }
 
-a.med-text:hover {
+a.med-text, a.big-text:hover {
     color: var(--main-special);
 }
 
@@ -158,6 +158,14 @@ a:hover {
     padding-bottom: 200px;
 }
 
+.ps-200 {
+    padding-left: 200px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
 .height-auto {
     height: auto;
 }
@@ -197,4 +205,14 @@ a:hover {
 .space-evenly {
     display: flex;
     justify-content: space-evenly;
+}
+
+.pas-image {
+    min-width: 300px;
+}
+
+@media screen and (max-width: 960px) {
+    #teambuilder {
+        padding-left: 0px !important;
+    }
 }
