@@ -91,7 +91,7 @@ function ContactModal() {
   return (
     <>
     <div className="pb-3" id="contact_modal">
-      <Button variant="primary" onClick={() => setModalShow(true)}>
+      <Button id="contact-button" variant="primary" onClick={() => setModalShow(true)}>
         Contact
       </Button>
       </div>

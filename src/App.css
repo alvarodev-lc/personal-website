@@ -11,6 +11,11 @@
 
 /* Padding 0.05px to avoid margin collapsing, causing scroll efect when it should not*/
 
+html {
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 body {
     width: 100%;
     height:100vh;
@@ -99,6 +104,10 @@ a:hover {
 
 .display-inline {
     display: inline !important;
+}
+
+.display-none {
+    display: none !important;
 }
 
 .block {
