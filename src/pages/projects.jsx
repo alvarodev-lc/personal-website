@@ -1,12 +1,20 @@
+import { useEffect } from 'react';
+
+import Aos from 'aos';
+
 import Navbar from '../components/Navbar/navbar'
+import Footer from '../components/Footer/footer';
 
-
-function Projects() {
+const Projects = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div id="projects">
       <Navbar/>
-    </div>
-  );
-}
 
+      <Footer/>
+    </div>  
+  )
+}
 export default Projects;

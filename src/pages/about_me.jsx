@@ -12,6 +12,9 @@ import magnifying_glassicon from '.././static/images/icons/magnifying_glass.png'
 import vueicon from '.././static/images/icons/vue.png'
 import reacticon from '.././static/images/icons/react.png'
 import angularicon from '.././static/images/icons/angular.png'
+import workericon from '.././static/images/icons/worker.png'
+import usizyicon from '.././static/images/icons/usizy.svg'
+import mailicon from '.././static/images/icons/mail.png'
 
 
 
@@ -23,8 +26,8 @@ const About = () => {
     <div id="about">
       <Navbar />
       <div>
-        {/*Education*/}
         <div className='container-fluid'>
+          {/*Education*/}
           <div className='row' data-aos="fade-down" data-aos-duration="1500">
             <div className='text-center'>
               <span className='big-text'>
@@ -67,7 +70,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                <div className='row offset-md-1 pt-3'>
+                <div className='row offset-md-1 pt-3 max-w-90perc'>
                   <span className='normal-text'>
                     After finishing my degree, I knew I wanted to expand my knowledge. I didn't really have any specific subject i wanted to specialize on, so I
                     decided to apply for the Distributed and Embedded Systems Software Master's, where I got accepted. There i got to learn a lot of different branches
@@ -131,7 +134,7 @@ const About = () => {
               </span>
             </div>
           </div>
-          <div className='row' data-aos="zoom-in-right" data-aos-duration="1500">
+          <div className='row pb-200' data-aos="zoom-in-right" data-aos-duration="1500">
           <div className='col offset-md-2 pt-md-3 max-w-70perc'>
               <span className='normal-text'>
                 Want to know more about me? Check out my projects <Link to="/projects">here!</Link> 
@@ -139,7 +142,73 @@ const About = () => {
           </div>
           </div>
         </div>
-      </div>
+        {/*Experience*/}
+        <div className='row' data-aos="fade-down" data-aos-duration="1500">
+            <div className='text-center'>
+              <img src={workericon} alt="Worker Icon" className='pb-3' width="100" height="120" />
+              <div className='display-inline ps-4'>
+                <span className='big-text'>
+                  Experience
+                </span>
+              </div>            
+            </div>
+          </div>
+        </div>
+        {/*Usizy*/}
+        <div className='pb-100'>
+            <div className='row justify-content-around'>
+              <div className='col pt-5 min-w-350' data-aos="fade-right" data-aos-duration="1500">
+                <div className='row offset-md-2 pb-3'>
+                  <div>
+                    <img src={usizyicon} alt="Usizy Icon" width="50" height="60" />
+                    <a className='med-text ps-3' href='https://usizy.com/' target="#blank">
+                      Usizy
+                    </a>
+                  </div>
+                </div>
+                <div className='row offset-md-2 pt-3'>
+                  <span className='normal-text'>
+                    Usizy is a startup that offers the most advanced and accurate size recommendation technology in the market. They provide a full range
+                    of eCommerce solutions based on machine learning and under one single platform.<br/><br/>
+
+                    This is where I currently work, and where I have learned the most in my life. From machine learning and complex dashboards for several 
+                    eCommerces, to analysis and actions to reduce returns and get the best CVR possible.<br/><br/>
+                    
+                    We work with the latest technology to automatically give service to every product our clients uploads to their eCommerce and to get
+                    all data available and store it to make our system stronger and get the best service and KPI's possible. Usizy boosts businesses 
+                    regardless of their scope, from apparel to bycicles, footwear and bras, we have a solution for almost everything.<br/><br/>
+
+                    With only 2 lines of code, we can integrate any client from around the world, and give service to most if not all of their brands out of 
+                    the box.
+                  </span>
+                </div>
+              </div>
+              {/*NexusIT*/}
+              <div className='col pt-5 min-w-350' data-aos="fade-left" data-aos-duration="1500">
+                <div className='row offset-md-1 pb-3'>
+                  <div>
+                    <img src={mailicon} alt="Nexus Icon" className='pb-2' width="70" height="60" />
+                    <a className='med-text ps-3' href='https://www.nexus-it.es/' target="#blank">
+                      Nexus IT
+                    </a>
+                  </div>
+                </div>
+                <div className='row offset-md-1 pt-3 max-w-90perc'>
+                  <span className='normal-text'>
+                    I had my first internship at Nexus. They create solutions to help companies digitalize their services, mainly offering 2 products: OpenLis
+                    and Plyca.<br/><br/>
+
+                    I worked on Plyca, which is a solution for digitalizing auctioning, managing records and, overall, speeding up processes. Plyca is a software
+                    written in Java which is very flexible for customers. I had the oportunity to work on it and handle customers simoultaneously, which was a 
+                    very good experience for me, since I learned a lot.<br/><br/>
+
+                    OpenLis is a product that supports clinical laboratories management, unifying the pre-analysis and post-analysis phases, while also making them
+                    more flexible and speeding the process.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
       <Footer />
     </div>
   );
