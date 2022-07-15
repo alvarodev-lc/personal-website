@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Fredoka', sans-serif;
+    color: white;
 }
 
 /* Padding 0.05px to avoid margin collapsing, causing scroll efect when it should not*/
@@ -42,6 +43,10 @@ a.med-text, a.big-text:hover {
 
 a:hover {
     color: var(--secondary-special);
+}
+
+a.big-text:hover {
+    color: var(--secondary-special) !important;
 }
 
 #presentation-card {
@@ -85,17 +90,14 @@ a:hover {
 
 .big-text {
     font-size: 40px;
-    color: white;
 }
 
 .med-text {
     font-size: 35px;
-    color: white;
 }
 
 .normal-text {
     font-size: 20px;
-    color: white;
 }
 
 .flex {
