@@ -55,10 +55,12 @@ class Navbar extends Component {
         `
         return(
                 <nav className="c-navbar-items">
-                    <h1 className="c-navbar-logo">
+                    <Link className="c-navbar-logo" to='/home'>
+                        <h1>
                         Alvaro
                         <i className='fab fa-react'></i>
-                    </h1>
+                        </h1>
+                    </Link>
                     <div className="c-menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
