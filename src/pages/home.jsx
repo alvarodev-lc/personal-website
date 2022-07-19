@@ -53,7 +53,7 @@ const Home = () => {
           <div className='row'>
             <div className='col offset-md-2 pt-md-3 pb-100 max-w-70perc'>
               <span className='normal-text'>
-                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, And
+                I solve problems using my skills and a data driven mentallity. My passion is to create a direct impact on people with my code, and
                 see how it makes their life easier. Automation, features, beautiful and intuitive UI's... everything is possible with the correct mindset
                 and a lot of strategic thinking!
               </span>
