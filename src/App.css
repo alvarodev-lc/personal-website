@@ -156,6 +156,10 @@ a.med-text:hover, a.big-text:hover {
     padding-bottom: 200px;
 }
 
+.ps-130 {
+    padding-left: 130px;
+}
+
 .ps-200 {
     padding-left: 200px;
 }
@@ -209,8 +213,16 @@ a.med-text:hover, a.big-text:hover {
     min-width: 300px;
 }
 
+.vr-portals-image {
+    min-width: 400px;
+}
+
+.js-framework-image {
+    min-width: 300px;
+}
+
 @media screen and (max-width: 960px) {
-    #teambuilder {
+    #teambuilder, #vr-portals-gameplay, #js-frameworks {
         padding-left: 0px !important;
     }
 }

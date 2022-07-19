@@ -159,7 +159,7 @@ const Home = () => {
                 <div className='mb-3'>
                   <img src={reacticon} alt="React Icon" width="30" height="25" />
                   <span className="card-title">React</span>
-                  <ProgressBar progress="45" delay="5" background="linear-gradient(135deg, rgba(115,255,223,1) 33%, rgba(255,255,255,1) 74%)" />
+                  <ProgressBar progress="50" delay="5" background="linear-gradient(135deg, rgba(115,255,223,1) 33%, rgba(255,255,255,1) 74%)" />
                 </div>
               </div>
             </div>
