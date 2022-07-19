@@ -41,13 +41,13 @@ function ModalImplementation(props) {
         <div className="row pb-3 offset-md-2">
           <div className="col-5">
             <img src={user_icon} alt="User Icon" width="30" height="20" className="pe-2"/>
-            <span>Álvaro López Cruz</span>
+            <span className="modal-text">Álvaro López Cruz</span>
           </div>
         </div>
         <div className="row pb-3 offset-md-2">
           <div className="col-12">
             <img src={mail_icon} alt="Mail Icon" width="30" height="25" className="pe-2"/>
-            <span>alvaro.lopez19997@gmail.com</span>
+            <span className="modal-text">alvaro.lopez19997@gmail.com</span>
             <div className="display-inline ps-2">
               <button type="button" className="smallbutton" onClick={function(event){ copyToClipboard(); showToastr(3000)}} >
                 <img src={clipboard_icon} alt="Clipboard Icon" width="20" height="20"/>
@@ -58,17 +58,17 @@ function ModalImplementation(props) {
         <div className="row pb-3 offset-md-2">
           <div className="col-5">
             <img src={mobile_icon} alt="Mobile Icon" width="30" height="20" className="pe-2"/>
-            <span>+34 603 623 143</span>
+            <span className="modal-text">+34 603 623 143</span>
           </div>
         </div>
         <div className="row offset-md-2">
           <div className="col-4">
             <img src={linkedin_icon} alt="LinkedIn Icon" width="30" height="20" className="pe-2"/>
-            <a href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank" className="link">Alvaro Lopez</a>
+            <a className="link" href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">Alvaro Lopez</a>
           </div>
           <div className="col-4">
             <img src={github_icon} alt="Github Icon" width="30" height="20" className="pe-2"/>
-            <a href="https://github.com/alvarodev-lc" target="#blank" className="link">Alvarodev-lc</a>
+            <a className="link" href="https://github.com/alvarodev-lc" target="#blank">Alvarodev-lc</a>
           </div>
         </div>
       </Modal.Body>
