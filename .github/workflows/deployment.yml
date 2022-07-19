@@ -8,7 +8,7 @@ on:
       - master
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.4
