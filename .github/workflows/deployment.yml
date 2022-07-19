@@ -7,9 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-    - name: Install and Build 🔧
+    - name: Build 🔧
       run: npm run build
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.3.4
-      with:
-        folder: build # The folder the action should deploy.
+      run: npm run deploy
