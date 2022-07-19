@@ -14,13 +14,13 @@ import './static/css/bootstrap/bootstrap.min.css'
 import 'aos/dist/aos.css'
 
 import {
-    BrowserRouter,
     Routes,
     Route,
+    HashRouter,
 } from "react-router-dom";
 
 ReactDOM.render( 
-    <BrowserRouter >
+    <HashRouter >
         <Routes Routes>
             <Route exact path = '/' element = { <Loading/> }/>
             <Route path = '/home' element = {<Home/> }/> 
@@ -28,6 +28,6 @@ ReactDOM.render(
             <Route path = '/projects' element = {<Projects/> }/>
             <Route path= '/privacy' element= {<PrivacyPolicy/> }/>
         </Routes >  
-    </BrowserRouter > ,
+    </HashRouter > ,
     document.getElementById('App')
 );
