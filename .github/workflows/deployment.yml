@@ -6,12 +6,9 @@ on:
   push:
     branches:
       - master
-
 jobs:
-  deployment:
+  deploy:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.3.4
-
