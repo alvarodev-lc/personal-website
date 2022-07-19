@@ -113,13 +113,19 @@ const About = () => {
             </div>
           </div>
           {/*Javascript frameworks images*/}
-          <div className='row' data-aos="zoom-out-down" data-aos-duration="1500">
-            <div className='pt-md-3 pb-100 space-evenly'>
-              <img src={vueicon} alt="Vue Icon" width="250" height="250" />
-              <img src={reacticon} alt="React Icon" className='mt-4' width="230" height="190" />
-              <img src={angularicon} alt="Angular Icon" width="250" height="250" />
-            </div>
-          </div>
+          <div className='col offset-md-2 pt-md-3 pb-100 max-w-70perc'>
+          <div id="js-frameworks" className='row pt-5 ps-130'>
+                <div className='col-4 js-framework-image' data-aos="fade-right" data-aos-duration="1500">
+                  <img src={vueicon} alt="Vue Icon" className='pb-2' width="300" height="250" />
+                </div>
+                <div className='col-4 js-framework-image' data-aos="fade-down" data-aos-duration="1500">
+                  <img src={reacticon} alt="React Icon" className='pb-2' width="300" height="250" />
+                </div>
+                <div className='col-4 js-framework-image' data-aos="fade-left" data-aos-duration="1500">
+                  <img src={angularicon} alt="Angular Icon" className='pb-2' width="300" height="250" />
+                </div>
+              </div>
+              </div>
           {/*Why am I a good developer*/}
           <div className='row' data-aos="fade-down" data-aos-duration="3000">
             <div className='col offset-md-2 pt-md-3 pb-50 max-w-70perc'>
