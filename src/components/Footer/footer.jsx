@@ -39,13 +39,12 @@ const Footer = () => {
                                     Projects
                                 </Link>
                             </div>
-                                <div className='footer-content-item'>
-                                    <span className='footer-text' onClick={() => showContactModal()}>
-                                        Contact me!
-                                    </span>
-                                </div>
+                            <div className='footer-content-item'>
+                                <span className='footer-text' onClick={() => showContactModal()}>
+                                    Contact me!
+                                </span>
                             </div>
-                        <div>
+                        </div>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
                                 <a className='footer-text display-inline ps-5' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">
@@ -57,6 +56,8 @@ const Footer = () => {
                                     Github
                                 </a>
                             </div>
+                        </div>
+                        <div className='footer-column'>
                             <div className='footer-content-item'>
                                 <Link className='footer-text display-inline ps-5' to="/privacy" onClick={() => window.scrollTo(0, 0)}>
                                     Privacy policy
@@ -64,7 +65,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
                 <div className='footer_secondary pb-5'>
                         <div className='divider dm'></div>

@@ -40,7 +40,7 @@ function ModalImplementation(props) {
       <Modal.Body>
         <div className="row pb-3 offset-md-2">
           <div className="col-5">
-            <img src={user_icon} alt="User Icon" width="30" height="20" className="pe-2"/>
+            <img src={user_icon} alt="User Icon" width="30" height="24" className="pe-2 pb-2px"/>
             <span className="modal-text">Álvaro López Cruz</span>
           </div>
         </div>
@@ -49,7 +49,7 @@ function ModalImplementation(props) {
             <img src={mail_icon} alt="Mail Icon" width="30" height="25" className="pe-2"/>
             <span className="modal-text">alvaro.lopez19997@gmail.com</span>
             <div className="display-inline ps-2">
-              <button type="button" className="smallbutton" onClick={function(event){ copyToClipboard(); showToastr(3000)}} >
+              <button type="button" className="smallbutton" onClick={function(){ copyToClipboard(); showToastr(3000);}} >
                 <img src={clipboard_icon} alt="Clipboard Icon" width="20" height="20"/>
               </button>
             </div>

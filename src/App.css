@@ -36,25 +36,17 @@ a {
     color: var(--main-special);
 }
 
-a.med-text, a.big-text:hover {
-    color: var(--main-special);
-}
-
-
 a:hover {
     color: var(--secondary-special);
 }
 
-a.big-text:hover {
-    color: var(--secondary-special) !important;
+
+a.med-text, a.big-text {
+    color: white;
 }
 
-#presentation-card {
-    animation: transitionBottomUp 2s;
-}
-
-#hobbies {
-    overflow-x: hidden;
+a.med-text:hover, a.big-text:hover {
+    color: var(--main-special);
 }
 
 /* Override bootstrap card component fields*/
@@ -142,6 +134,10 @@ a.big-text:hover {
 
 .max-w-90perc {
     max-width: 90%;
+}
+
+.pb-2px {
+    padding-bottom: 2px;
 }
 
 .pb-15 {
