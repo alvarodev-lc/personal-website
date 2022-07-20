@@ -22,6 +22,11 @@
     .max-w-70perc {
         max-width: 90% !important;
     }
+
+    .vr-portals-image {
+        width: 350px !important;
+        height: 250px !important;
+    }
 }
 
 /* Padding 0.05px to avoid margin collapsing, causing scroll efect when it should not*/
@@ -225,14 +230,6 @@ a.med-text:hover, a.big-text:hover {
 .space-evenly {
     display: flex;
     justify-content: space-evenly;
-}
-
-.pas-image {
-    min-width: 300px;
-}
-
-.vr-portals-image {
-    min-width: 500px;
 }
 
 .js-framework-image {
