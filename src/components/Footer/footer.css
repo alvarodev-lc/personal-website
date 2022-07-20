@@ -183,3 +183,14 @@
   -ms-flex-align: start;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 960px) {
+  
+  .w-layout-grid {
+    display: flex;
+  }
+
+  .footer-content {
+    margin-top: 7rem;
+  }
+}

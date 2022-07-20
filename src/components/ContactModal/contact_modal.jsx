@@ -39,13 +39,13 @@ function ModalImplementation(props) {
       </Modal.Header>
       <Modal.Body>
         <div className="row pb-3 offset-md-2">
-          <div className="col-5">
+          <div className="col-12 left">
             <img src={user_icon} alt="User Icon" width="30" height="24" className="pe-2 pb-2px"/>
             <span className="modal-text">Álvaro López Cruz</span>
           </div>
         </div>
         <div className="row pb-3 offset-md-2">
-          <div className="col-12">
+          <div className="col-12 left">
             <img src={mail_icon} alt="Mail Icon" width="30" height="25" className="pe-2"/>
             <span className="modal-text">alvaro.lopez19997@gmail.com</span>
             <div className="display-inline ps-2">
@@ -56,29 +56,26 @@ function ModalImplementation(props) {
           </div>
         </div>
         <div className="row pb-3 offset-md-2">
-          <div className="col-5">
+          <div className="col-12 left">
             <img src={mobile_icon} alt="Mobile Icon" width="30" height="20" className="pe-2"/>
             <span className="modal-text">+34 603 623 143</span>
           </div>
         </div>
         <div className="row offset-md-2">
-          <div className="col-4">
+          <div className="col-6 left">
             <img src={linkedin_icon} alt="LinkedIn Icon" width="30" height="20" className="pe-2"/>
             <a className="link" href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">Alvaro Lopez</a>
           </div>
-          <div className="col-4">
+          <div className="col-6 left">
             <img src={github_icon} alt="Github Icon" width="30" height="20" className="pe-2"/>
             <a className="link" href="https://github.com/alvarodev-lc" target="#blank">Alvarodev-lc</a>
           </div>
         </div>
       </Modal.Body>
       <div id="clipboard_toastr">Successfully copied email to clipboard!</div>
-      <Modal.Footer>
-        <div className="col-6">
+      <Modal.Footer className="justify-content-center">
+        <div className="">
           <CVModal/>
-        </div>
-        <div className="w-auto">
-          <Button onClick={props.onHide}>Close</Button>
         </div>
       </Modal.Footer>
     </Modal>

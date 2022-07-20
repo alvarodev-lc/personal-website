@@ -126,4 +126,8 @@
         color: #288c93;
         transition: 250ms;
     }
+
+    #contact_modal{
+        padding-left: 110px;
+    }
 }

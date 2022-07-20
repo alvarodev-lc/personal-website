@@ -131,11 +131,11 @@ const Projects = () => {
                   able to see.
                 </span>
               </div>
-              <div id="vr-portals-gameplay" className='row pt-5 ps-130'>
-                <div className='col-6 vr-portals-image' data-aos="fade-right" data-aos-duration="1500">
+              <div id="vr-portals-gameplay" className='row pt-5 offset-md-1'>
+                <div className='col vr-portals-image' data-aos="fade-right" data-aos-duration="1500">
                   <img src={vrportals_gameplay_example_1} alt="VRPortals Gameplay1" className='pb-2' width="500" height="350" />
                 </div>
-                <div className='col-6 vr-portals-image' data-aos="fade-left" data-aos-duration="1500">
+                <div className='col vr-portals-image' data-aos="fade-left" data-aos-duration="1500">
                   <img src={vrportals_gameplay_example_2} alt="VRPortals Gameplay2" className='pb-2' width="500" height="350" />
                 </div>
               </div>

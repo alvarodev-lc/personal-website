@@ -47,19 +47,19 @@ const Footer = () => {
                         </div>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
-                                <a className='footer-text display-inline ps-5' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">
+                                <a className='footer-text display-inline' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">
                                     LinkedIn
                                 </a>
                             </div>
                             <div className='footer-content-item'>
-                                <a className='footer-text display-inline ps-5' href="https://github.com/alvarodev-lc" target="#blank">
+                                <a className='footer-text display-inline' href="https://github.com/alvarodev-lc" target="#blank">
                                     Github
                                 </a>
                             </div>
                         </div>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
-                                <Link className='footer-text display-inline ps-5' to="/privacy" onClick={() => window.scrollTo(0, 0)}>
+                                <Link className='footer-text display-inline' to="/privacy" onClick={() => window.scrollTo(0, 0)}>
                                     Privacy policy
                                 </Link>
                             </div>

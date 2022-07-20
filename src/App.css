@@ -10,6 +10,20 @@
     color: white;
 }
 
+/* Responsive design, center everything on the screen for mobile */
+@media screen and (max-width: 960px) {
+    
+    div, span {
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Override 70% width class so responsive design shows at 90% width instead */
+    .max-w-70perc {
+        max-width: 90% !important;
+    }
+}
+
 /* Padding 0.05px to avoid margin collapsing, causing scroll efect when it should not*/
 
 html {
@@ -130,6 +144,10 @@ a.med-text:hover, a.big-text:hover {
 
 .max-w-70perc {
     max-width: 70%;
+}
+
+.max-w-80perc {
+    max-width: 80%;
 }
 
 .max-w-90perc {

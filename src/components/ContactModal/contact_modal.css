@@ -14,15 +14,24 @@
     font-size: 17px;
   }
   
-  #clipboard_toastr.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+#clipboard_toastr.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
 
-  .modal-text {
-    color: black;
+.modal-text {
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  
+  /* Stick contact modal to the left on responsive design*/
+  .left {
+      text-align: left;
+      justify-content: left;
   }
+}
 
   /* Animations to fade the toastr in and out */
 @-webkit-keyframes fadein {
