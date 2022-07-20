@@ -38,7 +38,7 @@ const About = () => {
           </div>
           {/*Degree*/}
           <div className='pb-100'>
-            <div className='row justify-content-around'>
+            <div className='row'>
               <div className='col pt-5 min-w-350' data-aos="fade-right" data-aos-duration="1500">
                 <div className='row offset-md-2 pb-3'>
                   <div>
@@ -49,7 +49,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className='row offset-md-2 pt-3'>
-                  <span className='normal-text'>
+                  <span className='normal-text max-w-90perc'>
                     I got started on my software developer career studing at Universidad Politécnica de Madrid, where I graduated as a software engineer after 4
                     years.<br /><br />
                     There, I had the oportunity to learn a lot of languages and techologies, although I think the most important thing I learned are good software
@@ -70,8 +70,8 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                <div className='row offset-md-1 pt-3 max-w-90perc'>
-                  <span className='normal-text'>
+                <div className='row offset-md-1 pt-3'>
+                  <span className='normal-text max-w-90perc'>
                     After finishing my degree, I knew I wanted to expand my knowledge. I didn't really have any specific subject i wanted to specialize on, so I
                     decided to apply for the Distributed and Embedded Systems Software Master's, where I got accepted. There i got to learn a lot of different branches
                     of the software development world, which was exactly what I was looking for.<br /><br />
@@ -160,7 +160,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/*Usizy*/}
+        {/* Usizy */}
         <div className='pb-100'>
             <div className='row justify-content-around'>
               <div className='col pt-5 min-w-350' data-aos="fade-right" data-aos-duration="1500">
@@ -173,7 +173,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className='row offset-md-2 pt-3'>
-                  <span className='normal-text'>
+                  <span className='normal-text max-w-90perc'>
                     Usizy is a startup that offers the most advanced and accurate size recommendation technology in the market. They provide a full range
                     of eCommerce solutions based on machine learning and under one single platform.<br/><br/>
 
@@ -189,7 +189,7 @@ const About = () => {
                   </span>
                 </div>
               </div>
-              {/*NexusIT*/}
+              {/* Nexus IT */}
               <div className='col pt-5 min-w-350' data-aos="fade-left" data-aos-duration="1500">
                 <div className='row offset-md-1 pb-3'>
                   <div>
@@ -199,8 +199,8 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                <div className='row offset-md-1 pt-3 max-w-90perc'>
-                  <span className='normal-text'>
+                <div className='row offset-md-1 pt-3'>
+                  <span className='normal-text max-w-90perc'>
                     I had my first internship at Nexus. They create solutions to help companies digitalize their services, mainly offering 2 products: OpenLis
                     and Plyca.<br/><br/>
 
