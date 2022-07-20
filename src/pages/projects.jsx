@@ -49,13 +49,13 @@ const Projects = () => {
                 </span>
               </div>
               <div className='row pt-5'>
-                <div className='col-4 pas-image' data-aos="fade-right" data-aos-duration="1500">
+                <div className='col' data-aos="fade-right" data-aos-duration="1500">
                   <img src={pas_login} alt="Pas Login" className='pb-2' width="270" height="460" />
                 </div>
-                <div className='col-4 pas-image' data-aos="fade-down" data-aos-duration="1500">
+                <div className='col' data-aos="fade-down" data-aos-duration="1500">
                   <img src={pas_pokedexoverview} alt="Pas Pokedex Overview" className='pb-2' width="270" height="460" />
                 </div>
-                <div className='col-4 pas-image' data-aos="fade-left" data-aos-duration="1500">
+                <div className='col' data-aos="fade-left" data-aos-duration="1500">
                   <img src={pas_pokemonoverview1} alt="Pas Pokemon Overview1" className='pb-2' width="270" height="460" />
                 </div>
               </div>
@@ -75,10 +75,10 @@ const Projects = () => {
                 </span>
               </div>
               <div id="teambuilder" className='row pt-5 ps-200'>
-                <div className='col-6 pas-image' data-aos="fade-right" data-aos-duration="1500">
+                <div className='col' data-aos="fade-right" data-aos-duration="1500">
                   <img src={pas_teambuilderoverview} alt="Pas TeamBuilder Overview" className='pb-2' width="270" height="460" />
                 </div>
-                <div className='col-6 pas-image' data-aos="fade-left" data-aos-duration="1500">
+                <div className='col' data-aos="fade-left" data-aos-duration="1500">
                   <img src={pas_teambuilderteamcreationoverview} alt="Pas TeamBuilder TeamCreation Overview" className='pb-2' width="270" height="460" />
                 </div>
               </div>
