@@ -104,7 +104,7 @@ const Projects = () => {
             <div className='col offset-md-2 pt-md-3 pb-100 max-w-70perc'>
               <div data-aos="fade-left" data-aos-duration="1500">
                 <span className='normal-text'>
-                  This was my final project before graduating as a software engineer. I wanted to explore how <a href='https://en.wikipedia.org/wiki/Euclidean_space'
+                  This was my final project before graduating as a software engineer. I wanted to explore how <a href='https://en.wikipedia.org/wiki/Non-Euclidean_geometry'
                   target={'#blank'}>non euclidean spaces</a> could be used to take advantage of the space on virtual reality applications.<br/><br/>
 
                   One of the main problems of virtual reality, is the lack of space available by users. When immersed in the virtual world, most people forget
