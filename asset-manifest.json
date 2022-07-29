@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.dbc99121.css",
-    "main.js": "/personal-website/static/js/main.0f7d0811.js",
+    "main.css": "/personal-website/static/css/main.a133b0a3.css",
+    "main.js": "/personal-website/static/js/main.a958ecfd.js",
     "static/media/fa-solid-900.svg": "/personal-website/static/media/fa-solid-900.e01ea526204590d06558.svg",
     "static/media/fa-brands-400.svg": "/personal-website/static/media/fa-brands-400.65ed7d005846ac8f8096.svg",
     "static/media/pas.png": "/personal-website/static/media/pas.755375329f2b85016572.png",
@@ -26,6 +26,7 @@
     "static/media/pas_teambuilder_overview.png": "/personal-website/static/media/pas_teambuilder_overview.543d07450d5c63b22613.png",
     "static/media/pokemon_overview_1.png": "/personal-website/static/media/pokemon_overview_1.68de13580a4aebdcb294.png",
     "static/media/fa-regular-400.eot": "/personal-website/static/media/fa-regular-400.45bbc08ee25c0f5cd0fb.eot",
+    "static/media/tfg_poster.png": "/personal-website/static/media/tfg_poster.fd3c5e5b0aa1e7cee50b.png",
     "static/media/fa-regular-400.ttf": "/personal-website/static/media/fa-regular-400.07c1f6dce8b2bfcf5111.ttf",
     "static/media/js.png": "/personal-website/static/media/js.ca691704283b1badf98c.png",
     "static/media/neverland_poster.png": "/personal-website/static/media/neverland_poster.0bf6d3a939e507d020c3.png",
@@ -44,11 +45,11 @@
     "static/media/mail.svg": "/personal-website/static/media/mail.93c7e7b9b3a701ddc10d3daaeb100369.svg",
     "static/media/usizy.svg": "/personal-website/static/media/usizy.90b95ec0977578b6a475be6a03ca75da.svg",
     "index.html": "/personal-website/index.html",
-    "main.dbc99121.css.map": "/personal-website/static/css/main.dbc99121.css.map",
-    "main.0f7d0811.js.map": "/personal-website/static/js/main.0f7d0811.js.map"
+    "main.a133b0a3.css.map": "/personal-website/static/css/main.a133b0a3.css.map",
+    "main.a958ecfd.js.map": "/personal-website/static/js/main.a958ecfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbc99121.css",
-    "static/js/main.0f7d0811.js"
+    "static/css/main.a133b0a3.css",
+    "static/js/main.a958ecfd.js"
   ]
 }
