@@ -152,7 +152,7 @@ const Projects = () => {
                   <img src={vrportals_gameplay_example_2} alt="VRPortals Gameplay2" className='pb-2 vr-portals-image' width="500" height="350" />
                 </div>
               </div>
-              <div className='pt-4' data-aos="fade-down" data-aos-duration="1500">
+              <div className='pt-4' data-aos="fade-left" data-aos-duration="1500">
                 <span className='normal-text'>
                   Here you can see a demo where the player experiments impossible 3D enviroments while exploring a procedurally generated maze on a 6x6 m room. If
                   you have virtual reality equipment and want to check it out for yourself, contact me!
