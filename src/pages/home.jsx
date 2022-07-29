@@ -23,13 +23,13 @@ import reacticon from '.././static/images/icons/react.png'
 
 const resetVideo = function () {
   // Reload the video instad of setting it to second zero to get back to placeholder image
-  let myVideo = document.getElementById("neverland_video");
+  let myVideo = document.getElementById("neverland-video");
   myVideo.load();
 };
 
 const initVideo = function () {
   // Set volume to 20% of the total to avoid loud noises.
-  let myVideo = document.getElementById("neverland_video");
+  let myVideo = document.getElementById("neverland-video");
   myVideo.volume = 0.2;
 };
 
@@ -189,7 +189,7 @@ const Home = () => {
           </div>
           <div className='col pb-100 min-w-350' data-aos="fade-left" data-aos-duration="1500">
             <div className='row'>
-              <video id="neverland_video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
+              <video id="neverland-video" className="w-85" controls="1" poster={neverland_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
                 {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
                 <source src="https://dl.dropboxusercontent.com/s/vck1o60ipg02n7a/Neverland_video.mp4?raw=1" />
               </video>
