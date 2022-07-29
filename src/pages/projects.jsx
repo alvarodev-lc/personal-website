@@ -20,6 +20,19 @@ import vrportalsicon from '.././static/images/projects/vr_portals/portals.png';
 import vrportals_overview from '.././static/images/projects/vr_portals/portals_overview.png';
 import vrportals_gameplay_example_1 from '.././static/images/projects/vr_portals/gameplay_example_1.png';
 import vrportals_gameplay_example_2 from '.././static/images/projects/vr_portals/gameplay_example_2.png';
+import tfg_poster from '.././static/images/thumbnails/tfg_poster.png';
+
+const resetVideo = function () {
+  // Reload the video instad of setting it to second zero to get back to placeholder image
+  let myVideo = document.getElementById("tfg-video");
+  myVideo.load();
+};
+
+const initVideo = function () {
+  // Set volume to 20% of the total to avoid loud noises.
+  let myVideo = document.getElementById("tfg-video");
+  myVideo.volume = 0;
+};
 
 const Projects = () => {
   useEffect(() => {
@@ -131,13 +144,25 @@ const Projects = () => {
                   able to see.
                 </span>
               </div>
-              <div id="vr-portals-gameplay" className='row pt-5 offset-md-1'>
+              <div id="vr-portals-gameplay" className='row pt-5 ps-90 justify-content-center'>
                 <div className='col' data-aos="fade-right" data-aos-duration="1500">
                   <img src={vrportals_gameplay_example_1} alt="VRPortals Gameplay1" className='pb-2 vr-portals-image' width="500" height="350" />
                 </div>
                 <div className='col' data-aos="fade-left" data-aos-duration="1500">
                   <img src={vrportals_gameplay_example_2} alt="VRPortals Gameplay2" className='pb-2 vr-portals-image' width="500" height="350" />
                 </div>
+              </div>
+              <div className='pt-4' data-aos="fade-down" data-aos-duration="1500">
+                <span className='normal-text'>
+                  Here you can see a demo where the player experiments impossible 3D enviroments while exploring a procedurally generated maze on a 6x6 m room. If
+                  you have virtual reality equipment and want to check it out for yourself, contact me!
+                </span>
+              </div>
+              <div className='row justify-content-center pt-5' data-aos="fade-up" data-aos-duration="1500">
+                <video id="tfg-video" className="w-85" controls="1" poster={tfg_poster} width="740" height="580" onEnded={resetVideo} onLoadStart={initVideo}>
+                  {/*Source is dropbox since google drive seems to have some authetication bugs with videos at the moment*/}
+                  <source src="https://dl.dropboxusercontent.com/s/wyczrxzyww7fom1/TFG_Video.mp4?raw=1" />
+                </video>
               </div>
               <div className='pt-100' data-aos="fade-up" data-aos-duration="1500">
                 <span className='normal-text'>

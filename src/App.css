@@ -179,6 +179,10 @@ a.med-text:hover, a.big-text:hover {
     padding-bottom: 200px;
 }
 
+.ps-90{
+    padding-left: 90px;
+}
+
 .ps-130 {
     padding-left: 130px;
 }
