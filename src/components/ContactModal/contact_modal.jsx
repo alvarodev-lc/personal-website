@@ -11,6 +11,7 @@ import user_icon from '../.././static/images/icons/user.png'
 import github_icon from '../.././static/images/icons/github.png'
 import clipboard_icon from '../.././static/images/icons/clipboard.png'
 import mobile_icon from '../.././static/images/icons/mobile.png'
+import stackoverflow_icon from '../.././static/images/icons/stackoverflow.png'
 
 const email = "alvaro.lopez19997@gmail.com"
 
@@ -62,13 +63,17 @@ function ModalImplementation(props) {
           </div>
         </div>
         <div className="row offset-md-2">
-          <div className="col-6 left">
+          <div className="col-4 left">
             <img src={linkedin_icon} alt="LinkedIn Icon" width="30" height="20" className="pe-2"/>
             <a className="link" href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">Alvaro Lopez</a>
           </div>
-          <div className="col-6 left">
+          <div className="col-4 left">
             <img src={github_icon} alt="Github Icon" width="30" height="20" className="pe-2"/>
-            <a className="link" href="https://github.com/alvarodev-lc" target="#blank">Alvarodev-lc</a>
+            <a className="link" href="https://github.com/alvarodev-lc" target="#blank">alvarodev-lc</a>
+          </div>
+          <div className="col-4 left">
+            <img src={stackoverflow_icon} alt="Stackoverflow Icon" width="30" height="20" className="pe-2"/>
+            <a className="link" href="https://stackoverflow.com/users/16878581/alvaro-lopez" target="#blank">alvaro-lopez</a>
           </div>
         </div>
       </Modal.Body>
