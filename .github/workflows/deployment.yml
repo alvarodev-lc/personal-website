@@ -3,19 +3,19 @@ on:
   push:
     branches:
       - master
-env: 
+env:
   CI: false
 jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
-    - name: Install and Build 🔧 
-      run: |
-        npm ci
-        npm run build
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: build # The folder the action should deploy.
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
