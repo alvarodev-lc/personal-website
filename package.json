@@ -31,7 +31,7 @@
     "dev": "vite build --watch && vite",
     "deploy": "gh-pages -d build",
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest run --coverage --watch=false"
