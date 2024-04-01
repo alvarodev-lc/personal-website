@@ -1,30 +1,21 @@
 name: Deployment 🚀
-
 on:
   push:
     branches:
       - master
-
+env:
+  CI: false
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Install dependencies
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Install and Build 🔧
         run: |
-          npm install -g pnpm  # Install PNPM globally
-          pnpm install  # Install project dependencies using PNPM
-
-      - name: Build project
-        run: pnpm build
-
+          npm ci
+          npm run build
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          user_name: GitHub Actions
-          user_email: alvaro.lopez19997@gmail.com
+          folder: build # The folder the action should deploy.
