@@ -36,8 +36,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies
-        run: pnpm install
+      - name: Build for production
+        run: pnpm build
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
