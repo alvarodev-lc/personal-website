@@ -1,21 +1,12 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
-
-import Aos from 'aos';
-import 'aos/dist/aos.css'
-
+import { ROUTES } from '../../routes'
 import './footer.min.css'
 
-const showContactModal = function () {
-    // Click modal button
-    let modalButton = document.getElementById("contact-button");
-    modalButton.click();
-  };
+const showContactModal = () => {
+    document.getElementById("contact-button").click();
+};
 
 const Footer = () => {
-    useEffect(() => {
-        Aos.init();
-      }, []);
     return(
         <div id='footer' className='footer'>
             <div className='mask-base tl'/>
@@ -25,17 +16,17 @@ const Footer = () => {
                     <div className='w-layout-grid grid-col'>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
-                                <Link className='footer-text' to="/home" onClick={() => window.scrollTo(0, 0)}>
+                                <Link className='footer-text' to={ROUTES.HOME} onClick={() => window.scrollTo(0, 0)}>
                                     Home
                                 </Link>
                             </div>
                             <div className='footer-content-item'>
-                                <Link className='footer-text' to="/about" onClick={() => window.scrollTo(0, 0)}>
+                                <Link className='footer-text' to={ROUTES.ABOUT} onClick={() => window.scrollTo(0, 0)}>
                                     About me
                                 </Link>
                             </div>
-                            <div className='footer-content-item'>    
-                                <Link className='footer-text' to="/projects" onClick={() => window.scrollTo(0, 0)}>
+                            <div className='footer-content-item'>
+                                <Link className='footer-text' to={ROUTES.PROJECTS} onClick={() => window.scrollTo(0, 0)}>
                                     Projects
                                 </Link>
                             </div>
@@ -47,19 +38,19 @@ const Footer = () => {
                         </div>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
-                                <a className='footer-text display-inline' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">
+                                <a className='footer-text display-inline' href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="_blank" rel="noreferrer">
                                     LinkedIn
                                 </a>
                             </div>
                             <div className='footer-content-item'>
-                                <a className='footer-text display-inline' href="https://github.com/alvarodev-lc" target="#blank">
+                                <a className='footer-text display-inline' href="https://github.com/alvarodev-lc" target="_blank" rel="noreferrer">
                                     Github
                                 </a>
                             </div>
                         </div>
                         <div className='footer-column'>
                             <div className='footer-content-item'>
-                                <Link className='footer-text display-inline' to="/privacy" onClick={() => window.scrollTo(0, 0)}>
+                                <Link className='footer-text display-inline' to={ROUTES.PRIVACY} onClick={() => window.scrollTo(0, 0)}>
                                     Privacy policy
                                 </Link>
                             </div>
@@ -72,7 +63,7 @@ const Footer = () => {
                             <div className='left-container'>
                                 <div className='copyright'>
                                     <div className='p12'>
-                                    © 2023 - Alvaro López. All rights reserved.
+                                    © {new Date().getFullYear()} - Alvaro López. All rights reserved.
                                     </div>
                                 </div>
                             </div>

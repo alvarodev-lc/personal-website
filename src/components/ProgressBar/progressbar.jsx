@@ -6,24 +6,20 @@ function ProgressBar(props) {
     let percentage = props.progress;
     let background = props.background;
     let animation_delay = props.delay
-    // Create necessary css to create the fill of the progressbar
-    let fill_classname = `progressbar-fill-${percentage}`
+    const fill_classname = `progressbar-fill-${percentage}`
+    const keyframe_name = `fill-${percentage}`
     const css = `
     .${fill_classname} {
         width: ${percentage}%;
         height: 100%;
         background: ${background};
         border-radius: 4px;
-        animation: transition ${1 + parseInt(animation_delay)}s;
+        animation: ${keyframe_name} ${1 + parseInt(animation_delay)}s forwards;
     }
 
-    @keyframes transition {
-        from {
-            width: 0%;
-        }
-        to {
-            width: ${percentage}
-        }
+    @keyframes ${keyframe_name} {
+        from { width: 0%; }
+        to   { width: ${percentage}%; }
     }
     `
     return(

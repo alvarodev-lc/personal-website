@@ -23,6 +23,9 @@
 # production
 /build
 
+# superpowers brainstorming sessions
+.superpowers/
+
 # misc
 .DS_Store
 .env.local

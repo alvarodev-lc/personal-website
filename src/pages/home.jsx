@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import Aos from 'aos';
-
 import Navbar from '../components/Navbar/navbar'
 import ProgressBar from '../components/ProgressBar/progressbar';
 import Footer from '../components/Footer/footer';
@@ -34,9 +31,6 @@ const initVideo = function () {
 };
 
 const Home = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div id="home">
       <Navbar />

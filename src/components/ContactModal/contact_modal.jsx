@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import CVModal from "../CVModal/cvmodal";
 import '../.././static/css/bootstrap/bootstrap.min.css'
@@ -65,15 +65,15 @@ function ModalImplementation(props) {
         <div className="row offset-md-2">
           <div className="col-4 left">
             <img src={linkedin_icon} alt="LinkedIn Icon" width="30" height="20" className="pe-2"/>
-            <a className="link" href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="#blank">Alvaro Lopez</a>
+            <a className="link" href="https://www.linkedin.com/in/alvaro-lopez-b354321b8" target="_blank" rel="noreferrer">Alvaro Lopez</a>
           </div>
           <div className="col-4 left">
             <img src={github_icon} alt="Github Icon" width="30" height="20" className="pe-2"/>
-            <a className="link" href="https://github.com/alvarodev-lc" target="#blank">alvarodev-lc</a>
+            <a className="link" href="https://github.com/alvarodev-lc" target="_blank" rel="noreferrer">alvarodev-lc</a>
           </div>
           <div className="col-4 left">
             <img src={stackoverflow_icon} alt="Stackoverflow Icon" width="30" height="20" className="pe-2"/>
-            <a className="link" href="https://stackoverflow.com/users/16878581/alvaro-lopez" target="#blank">alvaro-lopez</a>
+            <a className="link" href="https://stackoverflow.com/users/16878581/alvaro-lopez" target="_blank" rel="noreferrer">alvaro-lopez</a>
           </div>
         </div>
       </Modal.Body>
@@ -88,7 +88,7 @@ function ModalImplementation(props) {
 }
 
 function ContactModal() {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <>

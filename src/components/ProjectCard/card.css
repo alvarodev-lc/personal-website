@@ -1,50 +1,102 @@
 :root {
-    --title-color: rgba(2, 0, 36, 1);
-    --desc-color: rgb(0, 36, 14);
     --title-neg-color: white;
     --desc-neg-color: rgb(174, 208, 211);
 }
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.proj-page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 60px 24px 64px;
+    gap: 40px;
+}
+
+.proj-header {
+    text-align: center;
+}
+
+.proj-subtitle {
+    opacity: 0.75;
+    margin-top: 8px;
+}
+
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, min(480px, 38vw));
+    gap: 32px;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    height: min(560px, 62vh);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transform: scale(0.95) translateY(1em);
+    animation: revealAnimation 0.8s ease-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+}
+
+@keyframes revealAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(1em);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .proj-card {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    background-size: auto;
 }
 
 .proj-card-content {
-    height: 350px;
-    background: linear-gradient(0, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 100%, 0) 50%);
-}
-
-
-.proj-card-title {
-    color: var(--title-color);
-}
-
-.proj-card-body {
-    color: var(--desc-color)
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-top: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.88) 0%, transparent 100%);
 }
 
 .proj-card-titleneg {
     color: var(--title-neg-color);
+    font-size: 1.3rem;
+    margin-bottom: 6px;
 }
 
 .proj-card-bodyneg {
-    color: var(--desc-neg-color)
-}
-
-.proj-card-button {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 30px;
+    color: var(--desc-neg-color);
+    font-size: 0.95rem;
 }
 
 .bulbasur-bg {
     background-image: url(../../static/images/projects/pas_pokedex/bulbasur_background.jpg);
-    background-size: 225px 350px;
-    max-width: 23ch;
 }
 
 .portal-bg {
     background-image: url(../../static/images/projects/vr_portals/portal_background.jpg);
-    background-size: 340px 350px;
-    max-width: 23ch;
 }

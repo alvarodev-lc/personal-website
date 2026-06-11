@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 import '../.././static/css/bootstrap/bootstrap.min.css'
 import '../.././App.min.css'
@@ -30,7 +30,7 @@ function ModalImplementation(props) {
 }
 
 function CVModal() {
-  const [modalShow, setModalShow] = React.useState(false);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <>
