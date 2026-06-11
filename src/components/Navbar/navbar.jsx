@@ -9,8 +9,6 @@ import './navbar.min.css'
 class Navbar extends Component {
     // Clicked used to change navbar icon, margin used to change navbar style to avoid overlapping
     state = { clicked: false, margin: 80}
-    modal_state = {clicked: false}
-
     handleClick = () => {
         this.setState({clicked:!this.state.clicked})
         let isClicked = this.state.clicked;

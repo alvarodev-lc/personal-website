@@ -1,9 +1,7 @@
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import { ROUTES } from '../routes'
 import Navbar from '../components/Navbar/navbar'
 import Footer from '../components/Footer/footer';
-
-import Aos from 'aos';
 
 import upmicon from '.././static/images/icons/upm.png'
 import degreeicon from '.././static/images/icons/degree.png'
@@ -19,9 +17,6 @@ import mailicon from '.././static/images/icons/mail.png'
 
 
 const About = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div id="about">
       <Navbar />
@@ -43,7 +38,7 @@ const About = () => {
                 <div className='row offset-md-2 pb-3'>
                   <div>
                     <img src={degreeicon} alt="Degree Icon" width="50" height="50" />
-                    <a className='med-text ps-3' href='http://www.etsisi.upm.es/estudios/grados/61iw/ig' target="#blank">
+                    <a className='med-text ps-3' href='http://www.etsisi.upm.es/estudios/grados/61iw/ig' target="_blank" rel="noreferrer">
                       Degree
                     </a>
                   </div>
@@ -65,7 +60,7 @@ const About = () => {
                 <div className='row offset-md-1 pb-3'>
                   <div className=''>
                     <img src={mastersicon} alt="Masters Icon" width="50" height="50" />
-                    <a className='med-text ps-3' href='http://msde.etsisi.upm.es/' target="#blank">
+                    <a className='med-text ps-3' href='http://msde.etsisi.upm.es/' target="_blank" rel="noreferrer">
                       Master's
                     </a>
                   </div>
@@ -143,7 +138,7 @@ const About = () => {
           <div className='row pb-200' data-aos="zoom-in-right" data-aos-duration="1500">
           <div className='col offset-md-2 pt-md-3 max-w-70perc'>
               <span className='normal-text'>
-                Want to know more about me? Check out my projects <Link to="/projects">here!</Link> 
+                Want to know more about me? Check out my projects <Link to={ROUTES.PROJECTS}>here!</Link> 
               </span>
           </div>
           </div>
@@ -167,7 +162,7 @@ const About = () => {
                 <div className='row offset-md-2 pb-3'>
                   <div>
                     <img src={usizyicon} alt="Usizy Icon" width="50" height="60" />
-                    <a className='med-text ps-3' href='https://usizy.com/' target="#blank">
+                    <a className='med-text ps-3' href='https://usizy.com/' target="_blank" rel="noreferrer">
                       Usizy
                     </a>
                   </div>
@@ -194,7 +189,7 @@ const About = () => {
                 <div className='row offset-md-1 pb-3'>
                   <div>
                     <img src={mailicon} alt="Nexus Icon" className='pb-2' width="70" height="60" />
-                    <a className='med-text ps-3' href='https://www.nexus-it.es/' target="#blank">
+                    <a className='med-text ps-3' href='https://www.nexus-it.es/' target="_blank" rel="noreferrer">
                       Nexus IT
                     </a>
                   </div>

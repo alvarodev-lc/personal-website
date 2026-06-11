@@ -12,7 +12,7 @@ export default function Loader() {
         setTimeout(() => {
             setLoading(false);
         }, timer);
-    }, [timer]);
+    }, []);
   
 
     /* If the page is loading, return a loader using the template*/
