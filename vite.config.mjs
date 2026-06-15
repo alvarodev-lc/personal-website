@@ -1,8 +1,12 @@
 import { fileURLToPath, URL } from 'url'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  test: {
+    environment: 'jsdom',
+    css: false,
+  },
   plugins: [vue()],
   build: {
     outDir: 'build',
