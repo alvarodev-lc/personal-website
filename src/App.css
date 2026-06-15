@@ -84,6 +84,7 @@ a.med-text:hover, a.big-text:hover {
     font-size: 20px;
     background-color: #141241 !important;
     border-radius: 9px;
+    color: white !important;
 }
 
 .card-title {
@@ -239,6 +240,32 @@ a.med-text:hover, a.big-text:hover {
 .js-framework-image {
     min-width: 300px;
 }
+
+.skill-icon {
+    font-size: 22px;
+    width: 25px;
+    text-align: center;
+}
+
+.framework-icon {
+    font-size: 200px;
+    display: block;
+}
+
+/* Brand colors for FA icons */
+.fa-python     { color: #3776AB; }
+.fa-html5      { color: #E34F26; }
+.fa-js         { color: #F7DF1E; }
+.fa-css3-alt   { color: #264DE4; }
+.fa-java       { color: #ED8B00; }
+.fa-docker     { color: #0db7ed; }
+.fa-git-alt    { color: #F05032; }
+.fa-linux      { color: #FCC624; }
+.fa-vuejs      { color: #42B883; }
+.fa-react      { color: #61DAFB; }
+.fa-angular    { color: #DD0031; }
+.fa-linkedin   { color: #0A66C2; }
+.fa-stack-overflow { color: #F48024; }
 
 @media screen and (max-width: 960px) {
     #teambuilder, #vr-portals-gameplay, #js-frameworks {
