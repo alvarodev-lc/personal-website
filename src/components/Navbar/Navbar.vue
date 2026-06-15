@@ -25,7 +25,7 @@ const mobileCSS = computed(() => `
 <template>
   <nav class="c-navbar-items">
     <RouterLink class="c-navbar-logo" to="/home">
-      <h1>Alvaro<i class="fab fa-vuejs"></i></h1>
+      <h1>Alvaro</h1>
     </RouterLink>
     <div class="c-menu-icon" @click="handleClick">
       <i :class="clicked ? 'fas fa-times' : 'fas fa-bars'"></i>
